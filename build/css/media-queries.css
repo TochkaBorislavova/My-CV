@@ -27,7 +27,7 @@
 
     /* header styles
    ------------------------------------------------------------------ */
-   header .banner { padding-bottom: 12px; }
+   header .banner { padding-bottom: 12px; top: 2rem;}
    header .banner-text h1 {
       font: 78px/1.1em 'opensans-bold', sans-serif;
       letter-spacing: -1px;      
@@ -35,6 +35,16 @@
    header .banner-text h3 {
       font: 17px/1.9em 'librebaskerville-regular', serif;
       width: 80%;
+   }
+   .completed-courses-field {
+      bottom: 7rem;
+   }
+   header .social {
+      display: none;
+   }
+   .icon-down-circle:before{
+      position: relative;
+      top: 1rem;
    }
    header .banner-text hr {
       width: 65%;
@@ -50,8 +60,6 @@
    /* About Section
    ------------------------------------------------------------------- */
    #about .profile-pic {
-      width: 114px;
-      height: 114px;
       margin-left: 12px;
    }
    #about .contact-details { width: 50%; }
@@ -141,7 +149,11 @@
 	#nav-wrap:not( :target ) > a:first-of-type,
 	#nav-wrap:target > a:last-of-type  {
 	   display: block;
-	}
+   }
+   
+   .completed-courses-field {
+      bottom: 0;
+   }
 
    /* hide menu panel */
    #nav-wrap ul#nav {
@@ -349,7 +361,10 @@
 
    /* header styles
    -------------------------------------------------------------------- */
-   header .banner { padding-top: 24px; }
+   header .banner { padding-top: 24px; position: relative;
+      top: 3rem;
+      left: 1rem;}
+   header .banner-text {padding:0;}
    header .banner-text h1 {
       font: 40px/1.1em 'opensans-bold', sans-serif;      
       margin: 0 auto 24px auto;
@@ -357,6 +372,14 @@
    header .banner-text h3 {
       font: 14px/1.9em 'librebaskerville-regular', sans-serif;
       width: 90%;
+   }
+
+   .diplomas-field {
+      right: 0rem;
+   }
+
+   .completed-courses-field {
+      bottom: 0rem;
    }
   
    /* header social links */
