@@ -1,1 +1,1 @@
-https://tochkaborislavova.github.io/My-CV/
+https://bilyanaborislavova.github.io/My-CV/
