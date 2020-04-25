@@ -4,11 +4,12 @@ import About from '../src/components/about/about';
 import Resume from '../src/components/resume/resume';
 import Portfolio from '../src/components/portfolio/portfolio';
 import Footer from '../src/components/footer/footer';
-import './App.css';
+import Navigation from './components/navigation/navigation';
 
 function App() {
   return (
-    <div className="App">
+    <div className="tochka-cv-wrapper">
+      <Navigation />
       <Header/>
       <About/>
       <Resume/>
