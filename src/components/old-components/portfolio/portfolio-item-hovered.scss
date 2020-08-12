@@ -1,0 +1,22 @@
+.portfolio-item-description-wrapper {
+    display: none;
+    position: absolute;
+    top: calc(50% - 20px);
+    left: 35px;
+
+    &.hovered {
+        display: flex;
+    }
+
+    .portfolio-item-description {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .portfolio-item-title,
+    .portfolio-item-paragraph,
+    .icon-plus {
+        color: #fff;
+    }
+}

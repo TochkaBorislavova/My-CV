@@ -1,0 +1,6 @@
+.portfolio-section-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 215px);
+    grid-column-gap: 150px;
+    justify-content: center;
+}

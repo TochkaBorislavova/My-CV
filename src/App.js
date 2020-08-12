@@ -1,22 +1,20 @@
-import React from 'react';
-import Header from '../src/components/header/header';
-import About from '../src/components/about/about';
-import Resume from '../src/components/resume/resume';
-import Portfolio from '../src/components/portfolio/portfolio';
-import Footer from '../src/components/footer/footer';
-import Navigation from './components/navigation/navigation';
+import React, { useState, useEffect } from 'react';
+import LoadingIndicator from './components/loading-indicators/loading-indicator';
 
-function App() {
+const App = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 3000);
+  }, []);
+
   return (
-    <div className="tochka-cv-wrapper">
-      <Navigation />
-      <Header/>
-      <About/>
-      <Resume/>
-      <Portfolio/>
-      <Footer/>
-    </div>
+    <body className="cv-wrapper">
+      <LoadingIndicator />
+    </body>
   );
-}
+};
 
 export default App;

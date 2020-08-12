@@ -1,0 +1,45 @@
+@import '../../common-styles/animations.scss';
+
+.loading-indicator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    .loading-indicator-coffee-into-code-icon {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+        height: 150px;
+    }
+
+    .svg-icon {
+        svg {
+            height: 100px;
+        }
+    }
+
+    .coffee-icon,
+    .code-icon {
+        position: absolute;
+        transition: opacity 1s ease-in-out;
+    }
+
+    .coffee-icon {
+        animation-name: fadeInAndOut;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-duration: 2s;
+        animation-direction: alternate;
+    }
+
+    .code-icon {
+        animation-name: fadeInAndOut;
+        animation-timing-function: jump-start;
+        animation-iteration-count: infinite;
+        animation-duration: 3.5s;
+        animation-direction: normal;
+    }
+}

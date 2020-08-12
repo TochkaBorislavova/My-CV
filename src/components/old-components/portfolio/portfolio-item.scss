@@ -1,0 +1,10 @@
+.portfolio-item-wrapper {
+    position: relative;
+    max-width: 215px;
+    max-height: 215px;
+    cursor: pointer;
+
+    .image-hovered {
+        filter: brightness(50%);
+    }
+}

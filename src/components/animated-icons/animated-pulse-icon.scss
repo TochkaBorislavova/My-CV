@@ -1,0 +1,13 @@
+@import '../../common-styles/animations.scss';
+
+.animated-pulse-icon {
+	// background: black;
+	border-radius: 50%;
+	margin: 10px;
+	height: 50px;
+	width: 50px;
+
+	box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+	transform: scale(1);
+	animation: pulse 2s infinite;
+}
