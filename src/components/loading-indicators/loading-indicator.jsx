@@ -1,7 +1,6 @@
 import './loading-indicator.scss';
 
 import React from 'react';
-import { Line } from 'rc-progress';
 import AnimatedPulseCoffeeIntoCodeIcon from '../animated/animated-pulse-coffee-into-code-icon';
 import AnimatedProgressBar from '../animated/animated-progress-bar';
 

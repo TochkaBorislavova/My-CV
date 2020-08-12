@@ -1,3 +1,5 @@
+import './animated-progress-bar.scss';
+
 import React, { useEffect, useState } from 'react';
 import { Line } from 'rc-progress';
 
@@ -22,7 +24,17 @@ const AnimatedProgressBar = () => {
     }, [ percent ]);
 
     return (
-        <Line strokeWidth="4" percent={percent} />
+        <section className="animated-progress-bar">
+            <article className="animated-progress-bar-content">
+                <p className="animated-progress-bar-turn-code-into-coffee">
+                    {`Turning coffee into code.`}
+                </p>
+                <p className="animated-progress-bar-turn-code-into-coffee-percentage">
+                    {`${percent}%`}
+                </p>
+            </article>
+            <Line strokeWidth="1" percent={percent} />
+        </section>
     );
 };
 

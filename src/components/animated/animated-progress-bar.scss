@@ -1,0 +1,37 @@
+.animated-progress-bar {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    .animated-progress-bar-content {
+        display: flex;
+    }
+
+    .animated-progress-bar-turn-code-into-coffee-percentage {
+        color: #ffff;
+        font-size: 20px;
+    }
+
+    .animated-progress-bar-turn-code-into-coffee {
+        color: #ffff;
+        margin-bottom: 15px;
+        font-size: 20px;
+
+        &:after {
+            overflow: hidden;
+            display: inline-block;
+            vertical-align: bottom;
+            -webkit-animation: ellipsis steps(4,end) 900ms infinite;      
+            animation: ellipsis steps(4,end) 900ms infinite;
+            content: "\2026"; /* ascii code for the ellipsis character */
+            width: 0px;
+        }
+    }
+}
+
+@keyframes ellipsis {
+    to {
+      width: 1.25em;    
+    }
+}
