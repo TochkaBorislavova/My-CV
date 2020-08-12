@@ -1,51 +1,32 @@
 @keyframes pulse {
 	0% {
 		transform: scale(0.95);
-        box-shadow: 0 0 0 0 rgba(255,255,255,1);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
 	}
 
 	70% {
 		transform: scale(1);
-		box-shadow: 0 0 0 10px rgba(255,255,255,1);
+		box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.9);
 	}
 
 	100% {
 		transform: scale(0.95);
-		box-shadow: 0 0 0 0 rgba(255,255,255,1);
+		box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.5);
 	}
 }
 
 @keyframes fadeInAndOut {
-
     0% {
-        opacity: 1;
-    }
-
-    50% {
-        opacity: 0.1;
-    }
-
-    70% {
-        opacity: 0.1;
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-
-@keyframes fadeOutAndIn {
-       0% {
         opacity: 0.5;
     }
 
-    // 45% {
-    //     opacity: 1;
-    // }
+    45% {
+        opacity: 1;
+    }
 
-    // 55% {
-    //     opacity: 0.3;
-    // }
+    55% {
+        opacity: 0.3;
+    }
 
     100% {
         opacity: 0;

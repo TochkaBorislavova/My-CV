@@ -7,9 +7,9 @@ const AnimatedPulseCoffeeIntoCodeIcon = ({ className }) => (
         <div className="coffee-icon">
             <CoffeeIcon />
         </div>
-        <div className="code-icon">
+        {/* <div className="code-icon">
             <CodeIcon />
-        </div>
+        </div> */}
     </AnimatedPulseIcon>
 );
 
