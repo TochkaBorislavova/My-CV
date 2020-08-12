@@ -24,22 +24,22 @@
     .coffee-icon,
     .code-icon {
         position: absolute;
-        transition: opacity 1s ease-in-out;
+        transition: opacity 2s ease-in-out;
     }
 
     .coffee-icon {
         animation-name: fadeInAndOut;
-        animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in;
         animation-iteration-count: infinite;
         animation-duration: 2s;
         animation-direction: alternate;
     }
 
     .code-icon {
-        animation-name: fadeInAndOut;
-        animation-timing-function: jump-start;
+        animation-name: fadeOutAndIn;
+        animation-timing-function: ease-out;
         animation-iteration-count: infinite;
-        animation-duration: 3.5s;
+        animation-duration: 2s;
         animation-direction: normal;
     }
 }

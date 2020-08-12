@@ -7,3 +7,11 @@
 body {
   height: 100vh;
 }
+
+.is-loading-page {
+  background-color: #0000;
+}
+
+.cv-content-wrapper {
+  background-color: #fafafa;
+}
