@@ -1,3 +1,5 @@
+@import '../../common-styles/animations.scss';
+
 .animated-progress-bar {
     width: 100%;
     display: flex;
@@ -30,8 +32,3 @@
     }
 }
 
-@keyframes ellipsis {
-    to {
-      width: 1.25em;    
-    }
-}

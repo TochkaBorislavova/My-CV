@@ -2,38 +2,36 @@ import './animated-progress-bar.scss';
 
 import React, { useEffect, useState } from 'react';
 import { Line } from 'rc-progress';
+import { useGlobalState } from '../../global-state-provider';
+import { increaseNumber } from '../../utils/func-utils';
+
+const NUMBER_TO_INCREMENT_WITH = 1;
+const TIMEOUT_IN_MS = 75;
+const MAX_NUMBER_TO_INCREMENT_TO = 100;
 
 const AnimatedProgressBar = () => {
+    const { setIsPageLoading } = useGlobalState();
     const [ percent, setPercent ] = useState(0);
 
-    const increasePercent = () => {
-        const updatedPercent = percent + 1;
-
-        const timeout = setTimeout(
-            () => setPercent(updatedPercent),
-            100,
-        );
-    
-        if (updatedPercent > 100) {
-            return clearTimeout(timeout);
-        }
-    };
-
     useEffect(() => {
-        increasePercent();
+        increaseNumber(percent, NUMBER_TO_INCREMENT_WITH, setPercent, TIMEOUT_IN_MS, MAX_NUMBER_TO_INCREMENT_TO);
+
+        if (percent === MAX_NUMBER_TO_INCREMENT_TO) {
+            setIsPageLoading(false);
+        }
     }, [ percent ]);
 
     return (
         <section className="animated-progress-bar">
             <article className="animated-progress-bar-content">
-                <p className="animated-progress-bar-turn-code-into-coffee">
+                <p className={`animated-progress-bar-turn-code-into-coffee`}>
                     {`Turning coffee into code.`}
                 </p>
                 <p className="animated-progress-bar-turn-code-into-coffee-percentage">
                     {`${percent}%`}
                 </p>
             </article>
-            <Line strokeWidth="1" percent={percent} />
+            <Line strokeColor="#19f6e8" strokeWidth="1" percent={percent} />
         </section>
     );
 };

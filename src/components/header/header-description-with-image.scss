@@ -1,0 +1,21 @@
+.header-desription-with-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .header-description-wrapper {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .header-image {
+        width: 170px;
+        height: 170px;
+        border-radius: 50%;
+        margin-right: 35px;
+    }
+
+    .header-full-name {
+        margin-bottom: 15px;
+    }
+}

@@ -1,32 +1,13 @@
 import './app.scss';
 
-import React, { useState, useEffect } from 'react';
-import LoadingIndicator from './components/loading-indicators/loading-indicator';
+import React from 'react';
+import { GlobalStateProvider } from './global-state-provider';
+import PageContentWrapper from './page-content-wrapper';
 
-const isLoadingClassName = 'is-loading-page';
-const cvContentWrapperClassName = 'cv-content-wrapper';
-
-const App = () => {
-  const [ pageContentWrapperClassName, setPageContentWrapperClassName ] = useState(isLoadingClassName);
-  const [ isLoading, setIsLoading ] = useState(true);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 3000);
-  }, []);
-
-  useEffect(() => {
-    if (!isLoading) {
-      setPageContentWrapperClassName(cvContentWrapperClassName);
-    }
-  }, [ isLoading ]);
-
-  return (
-    <body className={pageContentWrapperClassName}>
-      <LoadingIndicator />
-    </body>
-  );
-};
+const App = () => (
+  <GlobalStateProvider>      
+    <PageContentWrapper />
+  </GlobalStateProvider>
+);
 
 export default App;
