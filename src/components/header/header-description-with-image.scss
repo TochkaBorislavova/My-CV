@@ -6,6 +6,7 @@
     .header-description-wrapper {
         display: flex;
         flex-flow: column;
+        position: relative;
     }
 
     .header-image {
@@ -13,9 +14,19 @@
         height: 170px;
         border-radius: 50%;
         margin-right: 35px;
+        border: 5px solid #ececec;
     }
 
     .header-full-name {
         margin-bottom: 15px;
+    }
+
+    .contact-cta {
+        position: absolute;
+        top: 5px;
+        right: calc(930px - 250px);
+        cursor: pointer;
+        border: none;
+        background-color: inherit;
     }
 }
