@@ -2,6 +2,7 @@ import './menu-tabs.scss';
 
 import React from 'react';
 import { Tabs, TabList, Tab, TabPanel } from 'react-tabs';
+import ProjectTabs from './project-tabs';
 
 const MenuTabs = () => (
     <Tabs className="menu-tabs">
@@ -11,7 +12,7 @@ const MenuTabs = () => (
             <Tab>Certification</Tab>
         </TabList>
         <TabPanel>
-            Projects
+            <ProjectTabs />
         </TabPanel>
         <TabPanel>
             Skills
