@@ -1,0 +1,21 @@
+$tablet-portrait-breakpoint: 600px;
+$tablet-landscape-breakpoint: 900px;
+$desktop-breakpoint: 1200px;
+
+@mixin for-tablet-portrait-up {
+    @media (min-width: $tablet-portrait-breakpoint) {
+        @content;
+    }
+}
+
+@mixin for-tablet-landscape-up {
+    @media (min-width: $tablet-landscape-breakpoint) {
+        @content;
+    }
+}
+
+@mixin for-desktop-up {
+    @media (min-width: $desktop-breakpoint) {
+        @content;;
+    }
+}

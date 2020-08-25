@@ -19,7 +19,9 @@ const HeaderDescriptionWithImage = () => (
                 Bilyana Borislavova
             </h2>
             <p className="header-description">
-                I am a highly-motivated and ambitious person who is always keen on obtaining new skills and enhancing already existing ones. I am also constantly eager to accept various challenges for both self-growth and career development in order to keep improving myself every day. Considering that I am passionate about travelling, my goal is to become a full-stack software developer with flexible working hours so that I can travel the world and produce quality software at the same time.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum deserunt laborum fugiat ipsa asperiores nostrum molestiae corrupti natus quam laudantium, voluptatibus nulla deleniti cum omnis animi? Officiis dolores doloribus officia?
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga odit architecto voluptate, dignissimos, consectetur dolore voluptatibus ex repellat ad velit atque aliquid iure corrupti dicta perferendis quos? Sint, repellat ad.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error adipisci in aperiam ad natus atque beatae tenetur perferendis illo maiores officiis repellat veritatis, assumenda, nam doloribus maxime impedit nulla explicabo.
             </p>
             <ContactCta>
                 <ContactInfo />

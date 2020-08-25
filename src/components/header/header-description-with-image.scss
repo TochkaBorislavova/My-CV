@@ -2,11 +2,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #b2a8a8;
 
     .header-description-wrapper {
         display: flex;
         flex-flow: column;
-        position: relative;
     }
 
     .header-image {
@@ -23,10 +24,11 @@
 
     .contact-cta {
         position: absolute;
-        top: 5px;
-        right: calc(930px - 250px);
+        top: 75px;
+        right: calc(100vw - 45%);
         cursor: pointer;
         border: none;
+        outline: none;
         background-color: inherit;
     }
 }
