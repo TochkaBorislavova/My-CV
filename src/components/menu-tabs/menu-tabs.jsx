@@ -6,7 +6,7 @@ import ProjectTabs from './project-tabs';
 
 const MenuTabs = () => (
     <Tabs className="menu-tabs">
-        <TabList>
+        <TabList className="menu-tabs-tab-list">
             <Tab>Projects</Tab>
             <Tab>Skills</Tab>
             <Tab>Certification</Tab>
