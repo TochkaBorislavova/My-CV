@@ -1,8 +1,12 @@
 .project-tabs {
-    .react-tabs__tab-list {
+    .project-tabs-tab-list {
         display: flex;
         flex-flow: column;
         align-items: center;
         font-size: 18px;
     }
-}
+
+    .react-tabs__tab--selected {
+        font-weight: bold;
+    }
+}   
