@@ -6,16 +6,11 @@
     flex-flow: column;
     align-items: center;
 
-    .animated-progress-bar-content {
+    .animated-progress-bar-content-wrapper {
         display: flex;
     }
 
-    .animated-progress-bar-turn-code-into-coffee-percentage {
-        color: #ffff;
-        font-size: 20px;
-    }
-
-    .animated-progress-bar-turn-code-into-coffee {
+    .animated-progress-bar-content {
         color: #ffff;
         margin-bottom: 15px;
         font-size: 20px;

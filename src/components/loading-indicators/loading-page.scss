@@ -19,6 +19,16 @@
         margin-bottom: 50px;
     }
 
+    .loading-page-text {
+        font-size: 20px;
+        color: #ffffff;
+
+        &:after {
+            content: " ";
+            white-space: pre;
+        }
+    }
+
     .svg-icon {
         svg {
             height: 100px;

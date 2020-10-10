@@ -9,25 +9,27 @@ const NUMBER_TO_INCREMENT_WITH = 1;
 const TIMEOUT_IN_MS = 75;
 const MAX_NUMBER_TO_INCREMENT_TO = 100;
 
-const AnimatedProgressBar = () => {
+const AnimatedProgressBar = ({ children, numberToIncrementTo }) => {
     const { setIsPageLoading } = useGlobalState();
     const [ percent, setPercent ] = useState(0);
 
-    useEffect(() => {
-        increaseNumber(percent, NUMBER_TO_INCREMENT_WITH, setPercent, TIMEOUT_IN_MS, MAX_NUMBER_TO_INCREMENT_TO);
+    const maxNumberToIncrementTo = numberToIncrementTo
+        ? numberToIncrementTo
+        : MAX_NUMBER_TO_INCREMENT_TO;
 
-        if (percent === MAX_NUMBER_TO_INCREMENT_TO) {
+    useEffect(() => {
+        increaseNumber(percent, NUMBER_TO_INCREMENT_WITH, setPercent, TIMEOUT_IN_MS, maxNumberToIncrementTo);
+
+        if (percent === maxNumberToIncrementTo) {
             setIsPageLoading(false);
         }
     }, [ percent ]);
 
     return (
         <section className="animated-progress-bar">
-            <article className="animated-progress-bar-content">
-                <p className={`animated-progress-bar-turn-code-into-coffee`}>
-                    {`Turning coffee into code.`}
-                </p>
-                <p className="animated-progress-bar-turn-code-into-coffee-percentage">
+            <article className="animated-progress-bar-content-wrapper">
+                {children}
+                <p className="animated-progress-bar-content">
                     {`${percent}%`}
                 </p>
             </article>
