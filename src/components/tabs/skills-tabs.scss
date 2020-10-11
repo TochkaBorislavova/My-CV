@@ -1,0 +1,15 @@
+.skills-tabs {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
+
+    .skill-with-text {
+        margin-top: 20px;
+    }
+
+    .animated-progress-bar-content-wrapper {
+        align-self: start;
+    }
+}

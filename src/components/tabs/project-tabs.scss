@@ -8,10 +8,9 @@
 
     .react-tabs__tab-panel {
         display: grid;
-        grid-template-columns: repeat(3, 250px);
         gap: 50px 50px;
+        grid-template-columns: repeat(3, 250px);
         justify-content: center;
-        padding: 50px;
     }
 
     .react-tabs__tab--selected {
