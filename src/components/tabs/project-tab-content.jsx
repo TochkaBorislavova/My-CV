@@ -12,7 +12,7 @@ const ProjectTabContent = ({ src, name, description, onClick, href, technologies
         >
             <CloseCircleIcon />
         </button>
-        <a className="project-tab-conten-image-link" href={href}>
+        <a className="project-tab-content-image-link" href={href}>
             <img
                 className="project-tab-content-image"
                 src={src}

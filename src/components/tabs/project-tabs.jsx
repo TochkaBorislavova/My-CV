@@ -78,13 +78,54 @@ const frontEndProjects = [
         description: test,
         technologies: sulsTechnologies,
     },
-]
+];
+
+const personalProjects = [
+    {
+        name: 'Personal CV',
+        src: 'https://www.flaticon.com/svg/static/icons/svg/1126/1126949.svg',
+        href: 'https://bilyanaborislavova.github.io/My-CV',
+        description: test,
+        technologies: [
+            {
+                name: 'JavaScript',
+                icon: <JsColorfulIcon />,
+            },
+            {
+                name: 'React',
+                icon: <CodeColorfulIcon />,
+            },
+            {
+                name: 'Scss',
+                icon: <CssColorfulIcon />
+            }
+        ],
+    },
+    {
+        name: 'Contract Automation Tool',
+        src: 'https://bilyanaborislavova.github.io/My-CV/images/portfolio/console.jpg',
+        description: test,
+        technologies: [
+            {
+                name: 'Express JS',
+                icon: <JsColorfulIcon />,
+            },
+            {
+                name: 'Electron JS',
+                icon: <CodeColorfulIcon />,
+            },
+            {
+                name: 'Css',
+                icon: <CssColorfulIcon />
+            }
+        ],
+    },
+];
 
 const ProjectTabs = () => (
     <Tabs className="project-tabs">
         <TabList className="project-tabs-tab-list">
             <Tab>Front End Developer</Tab>
-            <Tab>Resourse Designer</Tab>
             <Tab>Personal Projects</Tab>
         </TabList>
         <TabPanel>
@@ -101,7 +142,17 @@ const ProjectTabs = () => (
             }
         </TabPanel>
         <TabPanel>
-            ffffffff
+        {
+            personalProjects.map(({ name, src, href, description, technologies }) => (
+                <ProjectTab
+                  name={name}
+                  src={src}
+                  href={href}
+                  description={description}
+                  technologies={technologies}
+                />
+            ))
+        }
         </TabPanel>
     </Tabs>
 ); 
