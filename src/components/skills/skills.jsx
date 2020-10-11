@@ -1,10 +1,10 @@
-import './skills-tabs.scss';
+import './skills.scss';
 
 import React from 'react';
 import SkillWithText from '../skills/skill-with-text';
 
-const SkillsTabs = () => (
-    <section className="skills-tabs">
+const Skills = () => (
+    <section className="skills">
         <SkillWithText text="JavaScript" numberToIncrementTo={50} />
         <SkillWithText text="React" numberToIncrementTo={70} />
         <SkillWithText text="Css/Less/Scss" numberToIncrementTo={80} />
@@ -14,4 +14,4 @@ const SkillsTabs = () => (
     </section>
 );
 
-export default SkillsTabs;
+export default Skills;

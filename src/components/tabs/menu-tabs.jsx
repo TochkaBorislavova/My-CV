@@ -2,7 +2,8 @@ import './menu-tabs.scss';
 
 import React from 'react';
 import { Tabs, TabList, Tab, TabPanel } from 'react-tabs';
-import SkillsTabs from './skills-tabs';
+import Skills from '../skills/skills';
+import Certification from '../certification/certification';
 import ProjectTabs from './project-tabs';
 
 const MenuTabs = () => (
@@ -16,10 +17,10 @@ const MenuTabs = () => (
             <ProjectTabs />
         </TabPanel>
         <TabPanel>
-            <SkillsTabs />
+            <Skills />
         </TabPanel>
         <TabPanel>
-            Certification
+            <Certification />
         </TabPanel>
     </Tabs>
 );
