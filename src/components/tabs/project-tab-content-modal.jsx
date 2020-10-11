@@ -2,13 +2,15 @@ import './project-tab-content-modal.scss';
 
 import React from 'react';
 import Modal from 'react-modal';
+import OutsideClickHandler from 'react-outside-click-handler';
 import ProjectTabContent from './project-tab-content';
 
 const ProjectTabContentModal = ({ isOpen, name, src, description, onClick, href, technologies }) => (
-    // <OutsideClickHandler onOutsideClick={onClick}>
+    <OutsideClickHandler onOutsideClick={onClick}>
         <Modal
           className="project-tab-content-modal"
-          isOpen={isOpen}>
+          isOpen={isOpen}
+        >
             <ProjectTabContent
               name={name}
               src={src}
@@ -18,7 +20,7 @@ const ProjectTabContentModal = ({ isOpen, name, src, description, onClick, href,
               technologies={technologies}
             />
         </Modal>
-    // </OutsideClickHandler>
+    </OutsideClickHandler>
 );
 
 export default ProjectTabContentModal;
