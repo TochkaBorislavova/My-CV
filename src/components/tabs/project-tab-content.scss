@@ -1,11 +1,56 @@
+.ReactModal__Content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .project-tab-content {
+    display: flex;
+    flex-flow: column;
+    position: relative;
+    padding: 20px;
+    box-shadow: 0 0 10px;
+    border-radius: 8px;
+    background-color: #ffffff;
+
     .project-tab-content-close-btn {
-        border: none;
-        background-color: unset;
+        position: absolute;
+        right: 20px;
 
         svg {
-            width: 50px;
-            height: 50px;
+            width: 35px;
+            height: 35px;
+            cursor: pointer;
+        }
+    }
+
+    .project-tab-content-image-link {
+        width: fit-content;
+    }
+
+    .project-tab-content-image {
+        width: 150px;
+    }
+
+    .project-tab-content-info {
+        margin: 20px 0;
+
+        .project-tab-content-name {
+            margin: 0 0 5px 0;
+        }
+    }
+
+    .project-tab-content-used-technologies-text {
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+    .project-tab-content-used-technologies-list {
+        display: flex;
+
+        .project-tab-content-used-technologies-list-item {
+            margin-right: 35px;
         }
     }
 }

@@ -4,7 +4,7 @@ import React from 'react';
 import Modal from 'react-modal';
 import ProjectTabContent from './project-tab-content';
 
-const ProjectTabContentModal = ({ isOpen, name, src, description, onClick }) => (
+const ProjectTabContentModal = ({ isOpen, name, src, description, onClick, href, technologies }) => (
     // <OutsideClickHandler onOutsideClick={onClick}>
         <Modal
           className="project-tab-content-modal"
@@ -14,6 +14,8 @@ const ProjectTabContentModal = ({ isOpen, name, src, description, onClick }) => 
               src={src}
               description={description}
               onClick={onClick}
+              href={href}
+              technologies={technologies}
             />
         </Modal>
     // </OutsideClickHandler>

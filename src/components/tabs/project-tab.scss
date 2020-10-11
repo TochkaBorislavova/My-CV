@@ -10,7 +10,6 @@
     transition: 0.3s;
 
     &:hover {
-        cursor: pointer;
         background-color: #838C95;
 
         .project-tab-logo {
@@ -40,13 +39,15 @@
             background-color: white;
         }
 
-        .svg-icon {
+        .project-tab-info-trigger {
             position: absolute;
-        }
+            cursor: pointer;
 
-        svg {
-            width: 50px;
-            max-height: 50px;
+
+            svg {
+                width: 50px;
+                max-height: 50px;
+            }
         }
     }
 
