@@ -1,18 +1,24 @@
 import './project-tab.scss';
 
 import React, { useState } from 'react';
-import OutsideClickHandler from 'react-outside-click-handler';
 import { BluePlusCircleIcon } from '../icons/icons';
-import ProjectTabContent from './project-tab-content';
+import ProjectTabContentModal from './project-tab-content-modal';
 
 const ProjectTab = ({ src, name }) => {
     const [ isProjectTabOpened, setIsProjectTabOpened ] = useState(false);
 
-    const closeProjectTab = () => setIsProjectTabOpened(false);
-    
+    const onClickHandler = () => setIsProjectTabOpened(!isProjectTabOpened);
+
+    const projectTabContentModal = (
+        <ProjectTabContentModal
+          isOpen={isProjectTabOpened}
+          onClick={onClickHandler}
+        />
+    );
+
     return (
-        <OutsideClickHandler onOutsideClick={closeProjectTab}>
-            <section className="project-tab">
+        <>
+            <section className="project-tab" onClick={onClickHandler}>
                 <img
                   className="project-tab-logo"
                   src={src}
@@ -25,8 +31,8 @@ const ProjectTab = ({ src, name }) => {
                     <BluePlusCircleIcon />
                 </article>
             </section>
-            {isProjectTabOpened && <ProjectTabContent />}
-        </OutsideClickHandler>
+            {isProjectTabOpened && projectTabContentModal}
+        </>
     );
 };
 

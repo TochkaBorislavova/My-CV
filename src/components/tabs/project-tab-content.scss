@@ -1,3 +1,11 @@
 .project-tab-content {
+    .project-tab-content-close-btn {
+        border: none;
+        background-color: unset;
 
+        svg {
+            width: 50px;
+            height: 50px;
+        }
+    }
 }
