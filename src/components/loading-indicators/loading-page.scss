@@ -1,5 +1,5 @@
-@import '../../common-styles/animations.scss';
 @import '../../common-styles/colors.scss';
+@import '../../common-styles/animations.scss';
 
 .loading-page {
     display: flex;
@@ -7,7 +7,7 @@
     justify-content: center;
     align-items: center;
     background-color: $loading-page-background-color;
-    height: 100vh;
+    height: 100%;
 
     .loading-page-coffee-into-code-icon {
         position: relative;
@@ -52,7 +52,6 @@
     }
 
     .animated-svg-line {
-        position: absolute;
         top: unset;
         text-align: center;
         bottom: 65px;

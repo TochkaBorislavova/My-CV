@@ -12,7 +12,7 @@ const PageContentWrapper = () => {
     
     return (
         <main className="page-content-wrapper">
-            <MainPage />
+            {content}
         </main>
     )
 };
