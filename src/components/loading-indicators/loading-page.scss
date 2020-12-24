@@ -7,7 +7,7 @@
     justify-content: center;
     align-items: center;
     background-color: $loading-page-background-color;
-    height: 100%;
+    height: 100vh;
 
     .loading-page-coffee-into-code-icon {
         position: relative;
@@ -52,9 +52,8 @@
     }
 
     .animated-svg-line {
-        top: unset;
-        text-align: center;
-        bottom: 65px;
         cursor: pointer;
+        bottom: 0;
+        text-align: center;
     }
 }
