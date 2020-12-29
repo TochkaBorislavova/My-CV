@@ -6,6 +6,7 @@
     flex-flow: column;
     justify-content: center;
     align-items: center;
+    position: relative;
     background-color: $loading-page-background-color;
     height: 100vh;
 
@@ -52,8 +53,9 @@
     }
 
     .animated-svg-line {
+        position: absolute;
+        top: 90%;
         cursor: pointer;
-        bottom: 0;
         text-align: center;
     }
 }
